@@ -14,6 +14,9 @@ public class StatisticHelper
     
     public static double CalculateMin(double[] numbers)
     {
+        if (numbers == null || numbers.Length == 0)
+            throw new ArgumentException("Array cannot be empty");
+        
         return numbers.Min();
     }
 }
