@@ -2,15 +2,15 @@
 
 using Tutorial2;
 
-var numbers = new double[10];
+var values = new double[10];
     
 Console.WriteLine("=== Number Input ===");
 
 for (var i = 0; i < 10; i++)
 {
     Console.Write($"[{i + 1}/10] Enter a number: ");
-    Double.TryParse(Console.ReadLine(), out numbers[i]);
+    Double.TryParse(Console.ReadLine(), out values[i]);
 }
 
-Console.WriteLine("Average: " + StatisticHelper.CalculateAverage(numbers));
-Console.WriteLine("Max: " + StatisticHelper.CalculateMax(numbers));
+Console.WriteLine("Average: " + StatisticHelper.CalculateAverage(values));
+Console.WriteLine("Max: " + StatisticHelper.CalculateMax(values));
