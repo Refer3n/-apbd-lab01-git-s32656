@@ -6,4 +6,9 @@ public class StatisticHelper
     {
         return numbers.Average();
     }
+
+    public static double CalculateMax(double[] numbers)
+    {
+        return numbers.Max();
+    }
 }
